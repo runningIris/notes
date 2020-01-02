@@ -1,6 +1,8 @@
 # 指数和对数函数的导数，对数微分法
 
-### 尝试求 y = aˣ 的导数，part 1
+### 求 y = aˣ 的导数
+
+1. 求 eˣ 的导数
 
 ```
 
@@ -33,7 +35,8 @@ dx   ⎮x=0
    dx  
    
 ```
-#### 引入自然对数 e, 求导 lnx
+
+2. 引入自然对数 e, 因为已知 eˣ 的导数，使用 implicit differentiation 可求导 lnx
 
 Natural Log: w = lnx
 
@@ -41,8 +44,6 @@ defines "ln": y = eˣ -> lny = x
 
 - ln(m * n) = lnm + lnn
 - ln1 = 0, lne = 1
-
-to find d/dx lnx, using implicit differentiation.
 
 ```
 w = lnx -> eʷ = x
@@ -66,4 +67,98 @@ w' = 1/eʷ = 1/x
 dx        x
 ```
 
-### 2. 求 y = log𝖺x 的导数
+
+3. 求 aˣ 的导数
+
+Method 1: 把 aˣ 转换为以 e 为底的指数
+
+```
+aˣ = (eˡⁿᵃ)ˣ = (eˣ)ˡⁿᵃ
+
+ d
+-- aˣ = lna(eˣˡⁿᵃ) = lna · aˣ
+dx
+```
+
+由此可得，M(a) = lna
+
+---
+
+对于 自然对数 e 的思考：无论底数是什么，总是可以转换成自然对数（所以说“自然”）
+
+eg:
+```
+ d
+-- 2ˣ = (ln2) · 2ˣ
+dx
+
+ d
+-- 10ˣ = (ln10) · 10ˣ
+dx
+```
+
+Method 2: Logarithmic Differentiation
+
+有时候直接求导原函数会很难，这时候可以考虑求导其对数函数
+
+```
+ d                d
+-- u = ???,  but -- lnu is easier, the basic identity is the chain rule
+dx               dx 
+
+ d        d   du          1          u'
+-- lnu = -- · -- · lnu = --- · u' = ---
+dx       du   dx          u          u
+
+(lnu)' = u'/u
+
+```
+
+使用上述公式求导 aˣ, u = aˣ, (lnaˣ)' = (aˣ)'/aˣ 
+
+u' = (lnaˣ)' · aˣ = (xlna)' · aˣ = (lna) · aˣ
+
+4. differentiatiate with moving exponent: v = xˣ
+
+使用 Method 2
+
+```
+ lnv = lnxˣ = x · lnx
+ 
+  d        v'     d
+ -- lnv = --- -> -- · x · lnx = v' / xˣ
+ dx        v     dx
+ 
+ 1 + lnx = v' / xˣ
+```
+
+ v' = xˣ · (1 + lnx)
+ 
+ 5. 求出以下式子的值：
+ 
+ ```     
+            1
+   lim (1 + -)ⁿ
+   n->∞     n
+```
+
+使用对数微分法（Method 2）：
+
+```
+   ln((1 + 1/n)ⁿ) = n · ln(1 + 1/n)
+   
+   令 △x = 1/n, 当 n -> ∞, △x -> 0,
+   
+                    ln(1 + △x) - ln1    d           
+   ln((1 + 1/n)ⁿ) = ---------------- = -- lnx|    = 1/x = 1
+                           △x          dx    |x=1
+   
+   回代原来的式子：
+            1
+   lim (1 + -)ⁿ = e^(ln((1 + 1/n)ⁿ)) = e^1 = e
+   n->∞     n
+   
+```
+（可使用原式子来计算自然对数 e 的值）
+
+### 求 y = log𝖺x 的导数
