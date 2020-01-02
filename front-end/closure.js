@@ -51,13 +51,13 @@ function foo(){
 }
 
 
-执行上下文
+// 执行上下文
 
-在任意一个时间点，只有唯一一个执行上下文在运行之中。
-这就是为什么JavaScript是‘单线程’的原因，意思就是一次只能处理一个请求。一般来说，浏览器会用‘栈’来保存这个执行上下文。栈是一种‘后进先出’（Last In First Out）的数据结构，即最后插入该栈的元素会最先从栈中被弹出（这是因为我们只能从栈的顶部插入或删除元素）。当前的执行上下文，或者说正在运行中的执行上下文永远在栈顶。
-当运行中的上下文被完全执行以后，它会从栈顶弹出，使得下一个栈顶的项接替它成为正在运行的执行上下文。
+// 在任意一个时间点，只有唯一一个执行上下文在运行之中。
+// 这就是为什么JavaScript是‘单线程’的原因，意思就是一次只能处理一个请求。一般来说，浏览器会用‘栈’来保存这个执行上下文。栈是一种‘后进先出’（Last In First Out）的数据结构，即最后插入该栈的元素会最先从栈中被弹出（这是因为我们只能从栈的顶部插入或删除元素）。当前的执行上下文，或者说正在运行中的执行上下文永远在栈顶。
+// 当运行中的上下文被完全执行以后，它会从栈顶弹出，使得下一个栈顶的项接替它成为正在运行的执行上下文。
 
-一个执行上下文正在运行并不代表另一个执行上下文需要等待它完成运行之后才可以开始运行。 一个正在运行中的上下文暂停或中止，另一个上下文开始执行。暂停的上下文可能在稍后某一时间点从它中止的位置继续执行。一个新的执行上下文被创建并推入栈顶，成为当前的执行上下文，这就是执行上下文替代的机制。
+// 一个执行上下文正在运行并不代表另一个执行上下文需要等待它完成运行之后才可以开始运行。 一个正在运行中的上下文暂停或中止，另一个上下文开始执行。暂停的上下文可能在稍后某一时间点从它中止的位置继续执行。一个新的执行上下文被创建并推入栈顶，成为当前的执行上下文，这就是执行上下文替代的机制。
 
 
 var x = 10;
@@ -76,10 +76,10 @@ function foo(a){
 var moan = foo(5); //closure
 
 
-The function below executes the function bar which was returned.
-when we executed the function foo in the line above. 
-The function bar invokes boop, at which point bar gets suspended and boop gets push 
-onto the top of the call track(see the screenshot below)
+// The function below executes the function bar which was returned.
+// when we executed the function foo in the line above. 
+// The function bar invokes boop, at which point bar gets suspended and boop gets push 
+// onto the top of the call track(see the screenshot below)
 
 
 moar(15);
