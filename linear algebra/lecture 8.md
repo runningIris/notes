@@ -25,11 +25,23 @@ In other language: if a combination of the rows of A gives the zero row, then th
 1. x<sub>particular</sub>: set all free variables to zero, solve Ax=b for privot variables.
 
 ```
-   x₁ + 2x₃ = 1  ->  x₁ = -2, x₃ = 3/2
+   x₁ + 2x₃ = 1 
         2x₃ = 3
-                            ⎡ -2⎤
-                            ⎢  0⎥
-   x<sub>particular</sub> = ⎢3/2⎥
-                            ⎣  0⎦
-```   
+        
+   ->  x₁ = -2, x₃ = 3/2
+   
+        ⎡ -2⎤
+        ⎢  0⎥
+   x𝗉 = ⎢3/2⎥
+        ⎣  0⎦
+```
+
+2. x<sub>nullspace</sub>
+
+    x = x𝗉 + x𝗇( any vector in the nullspace )
+    
+    Ax𝗉=b
+    Ax𝗇=0
+    
+    -> A(x𝗉 + x𝗇) = b
    
