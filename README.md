@@ -10,8 +10,8 @@
 
 ### 微积分 Calculus
 
-- [lecture 5: 隐函数微分法和逆函数导数](https://github.com/runningIris/notes/blob/master/calculus/lecture%205.md)
-
+- [lecture 5: 隐函数微分法和逆函数导数](https://github.com/runningIris/notes/blob/master/calculus/lecture5.md)
+- [lecture 6: 指数和对数函数的导数，对数微分法](https://github.com/runningIris/notes/blob/master/calculus/lecture6.md)
 ## 算法
 
 ### Algorithms I 的五个大作业：
