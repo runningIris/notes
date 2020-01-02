@@ -23,3 +23,13 @@ In other language: if a combination of the rows of A gives the zero row, then th
 ### To find complete solution to Ax=b
 
 1. x<sub>particular</sub>: set all free variables to zero, solve Ax=b for privot variables.
+
+```
+   x₁ + 2x₃ = 1  ->  x₁ = -2, x₃ = 3/2
+        2x₃ = 3
+                            ⎡ -2⎤
+                            ⎢  0⎥
+   x<sub>particular</sub> = ⎢3/2⎥
+                            ⎣  0⎦
+```   
+   
