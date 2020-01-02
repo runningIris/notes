@@ -4,9 +4,13 @@
 
 ## 数学
 
-### 线性代数（Linear Algebra）
+### 线性代数 Linear Algebra
 
-- [lecture 5: 求解 Ax = 0: 主变量, 特解](https://github.com/runningIris/notes/blob/master/linear%20algebra/lecture%207.md)
+- [lecture 7: 求解 Ax = 0: 主变量, 特解](https://github.com/runningIris/notes/blob/master/linear%20algebra/lecture%207.md)
+
+### 微积分 Calculus
+
+- [lecture 5: 隐函数微分法和逆函数导数](https://github.com/runningIris/notes/blob/master/calculus/lecture%205.md)
 
 ## 算法
 
