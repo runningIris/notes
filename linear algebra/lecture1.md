@@ -2,19 +2,20 @@
 
 ### Row Picture 行图像
 
-```
+
 2x - y = 0
 -x + 2y = 3
 
 使用矩阵来表示：
 
+```
 ⎡2 -1⎤ ⎡x⎤= ⎡0⎤
 ⎣-1 2⎦ ⎣y⎦  ⎣3⎦
    A    x =  b
+```
 
 对于一个 2 * 2 non-singular matrix，x = 二维平面上的一个点（两条直线相交）
 
-```
 
 ### Columns Picture 列图像
 
