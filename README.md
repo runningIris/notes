@@ -6,7 +6,10 @@
 
 ### 线性代数 Linear Algebra
 
-- [lecture 7: 求解 Ax = 0: 主变量, 特解](https://github.com/runningIris/notes/blob/master/linear%20algebra/lecture%207.md)
+- [lecture 1: 方程的几何意义](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture1.md)
+- [lecture 2: 矩阵消元/矩阵相乘操作/置换矩阵/逆矩阵](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture2.md)
+- [lecture 7: 求解 Ax=0: 主变量, 特解](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture7.md)
+- [lecture 8: 求解 Ax=b](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture8.md)
 
 ### 微积分 Calculus
 
