@@ -24,7 +24,9 @@
 
 ## 算法
 
-### Algorithms I 的五个大作业：
+### Algorithms I
+
+#### 五个大作业：
 
 1. [percolation](https://github.com/runningIris/percolation)
 2. [deques-randomized-queue](https://github.com/runningIris/deques-randomized-queue)
@@ -33,4 +35,4 @@
 5. [kd-tree](https://github.com/runningIris/kd-tree)
 
 ### Algorithms II
-- [Undirected Graphs](https://github.com/runningIris/notes/blob/master/algorithmsII/week1/undirected-graph/README.md)
+- [Undirected Graphs](https://github.com/runningIris/notes/blob/master/algorithmsII/week1/undirected-graphs/README.md)
