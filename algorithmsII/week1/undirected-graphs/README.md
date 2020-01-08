@@ -76,7 +76,7 @@ class Graph {
 ### Java Implementation
 
 ``` java
-class Graph {
+public class Graph {
     private final int V;
     private Bag<Interger>[] adj;
     Graph(int V) {
@@ -99,3 +99,86 @@ class Graph {
     }
 }
 ```
+
+### Depth First Search
+
+- Trémaux Maze Exploration Algorithm
+    * Unroll a ball of string behind you 探索迷宫时系一根绳子
+    * Mark each visited intersection and each visited passage 记录每个经过的节点和每条路径
+    * Retrace steps when no unvisited options 如果前面没有未走过的节点，则返回一步
+
+- Goal: Systematically search through a graph
+
+- idea: mimic maze exploration
+
+- DFS(to visit a vertex v):
+    * Mark v as visited
+    * Recursively visit all unmarked vertices w adjacent to v
+
+### Design pattern for graph processing
+
+Design pattern. Decouple graph data type from graph processing
+
+* Create a Graph object
+* Pass the Graph to a graph-processing routine
+* Query the graph-processing routine for information
+
+API:
+```
+public class Paths {
+    Path(Graph G, int s)
+    boolean hasPathTo(int v)
+    Iterable<Interger> pathTo(int v)
+}
+```
+
+Usage:
+``` java
+Paths paths = new Paths(G, s);
+for (int v = 0; v < G.V(); v++) {
+    if (paths.hasPathTo(v)) {
+        StdOut.println(v); // print all the vertices connected to s
+    }
+}
+```
+
+#### Depth-first Search Demo: to visit a vertex v
+
+* Mark vertex v as unvisited
+* Recursively visit all unmarked vertices adjacent to v
+
+- Goal: Find all vertices connected to s
+
+- Algorithm
+    * Use recursion(ball of string)
+    * Mark each visited vertex(and keep track of edge taken to visit it).
+    * Return(retrace steps) when no unvisited options
+
+- Data Structures
+    * `boolean[] marked`
+    * `int[] edgeTo` to keep track of paths
+
+- Implementation
+
+    ``` java
+    public class DepthFirstPaths {
+        private boolean[] marked;
+        private int[] edgeTo;
+        private int s;
+        public DepthFirstPaths(Graph G, int s) {
+            this.s = s;
+            marked = new boolean[G.V()];
+            edgeTo = new int[G.V()];
+            dfs(G, s);
+        }
+        private void dfs(Graph G, int v) {
+            marked[v] = true;
+            for (int w: G.adj(v)) {
+                if (!marked[w]) {
+                    dfs(G, v);
+                    edgeTo[w] = v;
+                }
+            }
+        }
+    }
+    ```
