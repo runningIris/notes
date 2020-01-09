@@ -217,7 +217,7 @@ public class BreadthFirstSearch {
 
         marked[s] = true;
         q.enqueue(s);
-        
+
         while (!q.isEmpty()) {
             int v = q.dequeue();
             for (int w: G.adj(v)) {
@@ -232,11 +232,46 @@ public class BreadthFirstSearch {
 }
 ```
 
-## Difference between Depth-First Search and Breadth-First Search
+### Difference between Depth-First Search and Breadth-First Search
 
 - Depth-First Search: put unvisited vertex in a stack
 - Breadth-First Search: put unvisited vertex in a queue
 
-## Shortest path
+### Shortest path
 
 Find path from s to t using fewest number of edges
+
+## Connected Components
+
+``` java
+public class CC {
+    private boolean[] marked;
+    private int[] id;
+    private int count;
+    public CC(Graph G) {
+        marked = new boolean[G.V()];
+        id = new int[G.V()];
+        count = 0;
+        for (int v = 0; v < G.V(); v++) {
+            if (!marked[v]) {
+                dfs(G, v);
+                count++;
+            }
+        }
+    }
+
+    private void dfs(G, v) {
+        marked[v] = true;
+        id[v] = count;
+        for (int w: G.adj(v)) {
+            if (!marked[w]) dfs(G, w);
+        }
+    }
+    public int count() {
+        return count;
+    }
+    public int id(int v) {
+        return id[v];
+    }
+}
+```
