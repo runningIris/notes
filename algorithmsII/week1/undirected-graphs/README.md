@@ -263,9 +263,7 @@ public class CC {
     private void dfs(G, v) {
         marked[v] = true;
         id[v] = count;
-        for (int w: G.adj(v)) {
-            if (!marked[w]) dfs(G, w);
-        }
+        for (int w: G.adj(v)) if (!marked[w]) dfs(G, w);
     }
     public int count() {
         return count;
@@ -275,3 +273,12 @@ public class CC {
     }
 }
 ```
+
+## Graph-processing challenges
+
+- Is a graph bipartite?
+- Find a cycle
+- Euler tour. Is there a (general) cycle that uses each edge exactly once?
+- Hamilton tour. Find a cycle that visits every vertex exactly once.
+- Are two graphs identical except for vertex names?
+- Lay out a graph in the plane without crossing edges?
