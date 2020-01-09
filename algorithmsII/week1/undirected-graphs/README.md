@@ -1,6 +1,6 @@
 # Undirected Graphs
 
-### Introduction to Graphs
+## Introduction to Graphs
 
 - Path: Sequences of vertices connected by edges
 - Cycle: path whose first vertice and last vertice are the same
@@ -17,7 +17,7 @@
 - Planarity(平行): Can you draw the graph in the plane with no crossing edges
 - Graph isomorphism: Do two adjacency lists represent the same graph?
 
-### Graph API
+## Graph API
 
 ```
 class Graph {
@@ -100,7 +100,7 @@ public class Graph {
 }
 ```
 
-### Depth First Search
+## Depth First Search
 
 - Trémaux Maze Exploration Algorithm
     * Unroll a ball of string behind you 探索迷宫时系一根绳子
@@ -142,7 +142,7 @@ for (int v = 0; v < G.V(); v++) {
 }
 ```
 
-#### Depth-first Search Demo: to visit a vertex v
+### Depth-first Search Demo: to visit a vertex v
 
 * Mark vertex v as unvisited
 * Recursively visit all unmarked vertices adjacent to v
@@ -180,5 +180,63 @@ for (int v = 0; v < G.V(); v++) {
                 }
             }
         }
+        public boolean hasPathTo(int v) {
+            return marked[v];
+        }
+        public Iterable<Interger> pathTo(int v) {
+            if (!hasPathTo(v)) return false;
+            Stack<Interger> path = new Bag();
+            path.push(v);
+            while (v != s) {
+                int prev = edgeTo[v]
+                path.push(prev);
+                v = prev;
+            }
+            return path;
+        }
     }
     ```
+
+## Breadth-First Search
+
+Repeat until the queue is empty:
+
+- Remove vertex v from queue
+- Add to queue all unmarked vertices adjacent to v, and mark them
+
+### Java Implementation
+``` java
+public class BreadthFirstSearch {
+    private boolean[] marked;
+    private int[] edgeTo;
+    private Queue<Interger> q;
+    public BreadthFirstSearch(Graph G, int s) {
+        marked = new boolean[G.V()];
+        edgeTo = new int[G.V()];
+        q = new Queue<Interger>();
+
+        marked[s] = true;
+        q.enqueue(s);
+        
+        while (!q.isEmpty()) {
+            int v = q.dequeue();
+            for (int w: G.adj(v)) {
+                if (!marked[w]) {
+                    edgeTo[w] = v;
+                    marked[w] = true;
+                    q.enqueue(w);
+                }
+            }
+        }
+    }
+}
+```
+
+## Difference between Depth-First Search and Breadth-First Search
+
+- Depth-First Search: put unvisited vertex in a stack
+- Breadth-First Search: put unvisited vertex in a queue
+
+## Shortest path
+
+Find path from s to t using fewest number of edges
