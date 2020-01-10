@@ -14,6 +14,7 @@
 - [lecture 6: 列空间和零空间](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture6.md)
 - [lecture 7: 求解 Ax=0: 主变量, 特解](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture7.md)
 - [lecture 8: 求解 Ax=b](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture8.md)
+- [lecture 9: 线性相关性、基、维数](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture9.md)
 
 ### 微积分 Calculus
 
