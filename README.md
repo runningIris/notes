@@ -26,7 +26,7 @@
 
 ## 算法
 
-### Algorithms
+### Classic Algorithms
 
 - [Quick Sort](https://github.com/runningIris/notes/blob/master/algorithms/quicksort.md)
 
