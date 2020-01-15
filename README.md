@@ -23,9 +23,14 @@
 - [lecture 7: 复习](https://github.com/runningIris/notes/blob/master/calculus/lecture7.md)
 - [lecture 8:  微分应用/线性近似(Linear Approximations)](https://github.com/runningIris/notes/blob/master/calculus/lecture8.md)
 - [lecture 10: 最值问题](https://github.com/runningIris/notes/blob/master/calculus/lecture10.md)
+
 ## 算法
 
-### Algorithms I
+### Algorithms
+
+- [Quick Sort](https://github.com/runningIris/notes/blob/master/algorithms/quicksort.md)
+
+### Algorithms I in Coursera
 
 #### 五个大作业：
 
@@ -35,6 +40,6 @@
 4. [8-puzzle](https://github.com/runningIris/8-puzzle)
 5. [kd-tree](https://github.com/runningIris/kd-tree)
 
-### Algorithms II
+### Algorithms II in Coursera
 - [Undirected Graphs](https://github.com/runningIris/notes/blob/master/algorithmsII/week1/undirected-graphs/README.md)
 - [Directed Graphs](https://github.com/runningIris/notes/blob/master/algorithmsII/week1/directed-graphs/README.md)
