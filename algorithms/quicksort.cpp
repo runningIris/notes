@@ -7,7 +7,6 @@ private:
         array[i] = array[j];
         array[j] = tmp;
     }
-private:
     static int partition(vector<int>& array, int lo, int hi) {
         int value = array[lo];
         int j = lo;
