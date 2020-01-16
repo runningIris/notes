@@ -38,11 +38,9 @@ A sequence of vectors that have two properties:
 Example: space in R<sup>3</sup>
 
     1 basis:
-    ```
     ⎡1⎤ ⎡0⎤ ⎡0⎤
     ⎢0⎥ ⎢1⎥ ⎢0⎥
     ⎣0⎦,⎣0⎦,⎣1⎦
-    ```
 
 ## Dimension
 

@@ -23,13 +23,14 @@
 - [lecture 7: 复习](https://github.com/runningIris/notes/blob/master/calculus/lecture7.md)
 - [lecture 8:  微分应用/线性近似(Linear Approximations)](https://github.com/runningIris/notes/blob/master/calculus/lecture8.md)
 - [lecture 10: 最值问题](https://github.com/runningIris/notes/blob/master/calculus/lecture10.md)
+- [lecture 11: 矩阵空间/秩一矩阵/小世界图](https://github.com/runningIris/notes/blob/master/calculus/lecture11.md)
 
 ## 算法
 
 ### Classic Algorithms
 
 - [Quick Sort](https://github.com/runningIris/notes/blob/master/algorithms/quicksort.cpp)
-- [KMP](https://github.com/runningIris/notes/blob/master/algorithms/kmp.cpp)
+- [KMP 子字符串查找](https://github.com/runningIris/notes/blob/master/algorithms/kmp.cpp)
 - [KMP算法分析(外)](https://blog.csdn.net/v_july_v/article/details/7041827)
 
 ### Algorithms I in Coursera
