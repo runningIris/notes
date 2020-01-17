@@ -15,7 +15,9 @@
 - [lecture 7: 求解 Ax=0: 主变量, 特解](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture7.md)
 - [lecture 8: 求解 Ax=b](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture8.md)
 - [lecture 9: 线性相关性、基、维数](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture9.md)
-
+- [lecture 10: 四个基本子空间](https://github.com/runningIris/notes/blob/master/linear-algebra/lecture10.md)
+- [lecture 11: 矩阵空间/秩一矩阵/小世界图](https://github.com/runningIris/notes/blob/master/calculus/lecture11.md)
+- [lecture 12: 图和网络](https://github.com/runningIris/notes/blob/master/calculus/lecture12.md)
 ### 微积分 Calculus
 
 - [lecture 5: 隐函数微分法和逆函数导数](https://github.com/runningIris/notes/blob/master/calculus/lecture5.md)
@@ -23,7 +25,6 @@
 - [lecture 7: 复习](https://github.com/runningIris/notes/blob/master/calculus/lecture7.md)
 - [lecture 8:  微分应用/线性近似(Linear Approximations)](https://github.com/runningIris/notes/blob/master/calculus/lecture8.md)
 - [lecture 10: 最值问题](https://github.com/runningIris/notes/blob/master/calculus/lecture10.md)
-- [lecture 11: 矩阵空间/秩一矩阵/小世界图](https://github.com/runningIris/notes/blob/master/calculus/lecture11.md)
 
 ## 算法
 

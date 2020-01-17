@@ -9,6 +9,7 @@ public:
         int j = -1;
         states.push_back(-1);
         for (i; i < N; i++) {
+            // 这里可以一步步地退 j 来检查，但使用 j = states[j] 的方式来回溯可以省很多不必要的检查
             while (j > -1 && pattern[j+1] != pattern[i]) {
                 j = states[j];
             }
