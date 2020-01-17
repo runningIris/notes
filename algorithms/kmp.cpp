@@ -3,22 +3,17 @@
 class KMP {
 public:
     static vector<int> CreateStatesMachine(string& pattern) {
-        // eg: pattern = "AABBAAACAABBA"
         const int N = (int)pattern.size();
         vector<int> states;
-        int m = 1;
-        int n = 0;
-        states.push_back(0);
-
-        while (m < N) {
-            if (pattern[m] == pattern[n]) {
-                n++;
-            } else {
-                n = 0;
+        int i = 1;
+        int j = -1;
+        states.push_back(-1);
+        for (i; i < N; i++) {
+            while (j > -1 && pattern[j+1] != pattern[i]) {
+                j = states[j];
             }
-            states.push_back(n);
-
-            m++;
+            if (pattern[j+1] == pattern[i]) j++;
+            states.push_back(j);
         }
         return states;
     }
@@ -33,11 +28,13 @@ public:
             if (text[m] != pattern[n]) {
                 if (n > 0) {
                     n = states[n-1] + 1;
+                } else {
+                    m++;
                 }
             } else {
                 n++;
+                m++;
             }
-            m++;
             // 找到匹配的情况
             if (n == N) {
                 return m - n;
@@ -58,6 +55,5 @@ int main(int argc, const char * argv[]) {
         cout << state[m] << ", ";
         m++;
     }
-
     return 0;
 }
