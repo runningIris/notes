@@ -8,6 +8,7 @@ public:
         int i = 1;
         int j = -1;
         states.push_back(-1);
+        // 之所以使用 j+1 而不是 j, 是因为要验证下一位是否符合标准，如果负责，则 +1, 不符合则回溯
         for (i; i < N; i++) {
             // 这里可以一步步地退 j 来检查，但使用 j = states[j] 的方式来回溯可以省很多不必要的检查
             while (j > -1 && pattern[j+1] != pattern[i]) {
