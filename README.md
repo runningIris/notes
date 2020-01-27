@@ -53,5 +53,5 @@
 ### 应用层
 
 #### Socket
-- UDP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/client.md) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/server.md)
-- TCP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/client.md) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/server.md)
+- UDP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/server.py)
+- TCP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/server.py)
