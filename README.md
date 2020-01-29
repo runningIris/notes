@@ -55,3 +55,7 @@
 #### Socket
 - UDP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/server.py)
 - TCP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/server.py)
+
+[Python3 Socket编程](https://blog.csdn.net/song_lee/article/details/99072318)
+
+- [作业1: Web 服务器](https://github.com/runningIris/notes/blob/master/computer-networking/socket/web-server/server.py)
