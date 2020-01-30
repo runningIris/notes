@@ -48,14 +48,15 @@
 - [Undirected Graphs](https://github.com/runningIris/notes/blob/master/algorithmsII/week1/undirected-graphs/README.md)
 - [Directed Graphs](https://github.com/runningIris/notes/blob/master/algorithmsII/week1/directed-graphs/README.md)
 
-## 计算机网络
-
-### 应用层
-
-#### Socket
-- UDP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/server.py)
-- TCP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/server.py)
+## 计算机网络(自顶向下方法原书第七版)
 
 [Python3 Socket编程](https://blog.csdn.net/song_lee/article/details/99072318)
 
-- [作业1: Web 服务器](https://github.com/runningIris/notes/blob/master/computer-networking/socket/web-server/server.py)
+### Python - Socket 编程例子
+- UDP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/UDP/server.py)
+- TCP 套接字 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/client.py) / [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/TCP/server.py)
+
+### 套接字编程作业
+
+- [作业1: Web 服务器](https://github.com/runningIris/notes/blob/master/computer-networking/socket/web-server/server.py) p119
+- [作业2: UDP ping 程序](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping) p119
