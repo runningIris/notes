@@ -58,5 +58,5 @@
 
 ### 套接字编程作业
 
-- [作业1: Web 服务器](https://github.com/runningIris/notes/blob/master/computer-networking/socket/web-server/server.py) p119
-- [作业2: UDP ping 程序](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping) p119
+- 作业1: Web 服务器 [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/web-server/server.py) p119
+- 作业2: UDP ping 程序 [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping/server.py)/[client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping/client.py) p119
