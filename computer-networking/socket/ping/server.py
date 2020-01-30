@@ -7,8 +7,11 @@ serverSocket.bind(('', 1200))
 while True:
     message, address = serverSocket.recvfrom(1024)
     print(message)
+    # rand = random.randint(0, 9)
+    # if rand < 3:
+    #     continue
     if message.upper() == 'DONE':
-        break;
+        break
     rand = random.randint(0, 9)
     serverSocket.sendto(message.upper(), address)
 
