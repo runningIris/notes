@@ -58,6 +58,7 @@
 
 ### 套接字编程作业
 
-- 作业1: Web 服务器 [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/web-server/server.py) p119
-- 作业2: UDP ping 程序 [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping/server.py)/[client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping/client.py) p119
-- 作业3: SMTP 邮件客户端 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/smtp/client.py) p119
+- 作业1: Web 服务器 [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/web-server/server.py) (p119)
+- 作业2: UDP ping 程序 [server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping/server.py)/[client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/ping/client.py) (p119)
+- 作业3: SMTP 邮件客户端 [client.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/smtp/client.py) (p119)
+- 作业4: 简单的代理服务器 [proxy-server.py](https://github.com/runningIris/notes/blob/master/computer-networking/socket/proxy/proxy-server.py)
