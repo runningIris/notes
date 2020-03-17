@@ -49,6 +49,10 @@ React 用三大策略将 O(n^3) 复杂度转化为 O(n) 复杂度
     需要注意的是，删除节点意味着彻底销毁该节点，而不是再后续的比较中再去看是否有另外一个节点等同于该删除的节点。
     如果该删除的节点之下有子节点，那么这些子节点也会被完全删除，它们也不会用于后面的比较。这也是算法复杂能够降低到 O（n）的原因。
 
+  * Component elements of the same type
+
+    当组件內更新时，组件 instance 不变，所以 state is maintained，react 会更新 props，然后在 render 的时候 diff 算法会对比新旧组件。
+
 - element diff 列表节点的对比
   
   对于同一层级的一组子节点，通过唯一id区分。The developer can hint at which child elements may be stable across different renders with a key prop.
