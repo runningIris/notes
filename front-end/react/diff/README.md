@@ -55,5 +55,6 @@ React 用三大策略将 O(n^3) 复杂度转化为 O(n) 复杂度
 
   如果仅仅是节点在列表中的顺序改变，则不需要重新创建节点，移动节点即可。
   
-本文参考：[React 源码剖析系列 － 不可思议的 react diff](https://zhuanlan.zhihu.com/p/20346379)
-
+本文参考：
+- [React 源码剖析系列 － 不可思议的 react diff](https://zhuanlan.zhihu.com/p/20346379)
+- [React - Reconciliation](https://reactjs.org/docs/reconciliation.html)
