@@ -7,6 +7,7 @@
 React 用三大策略将 O(n^3) 复杂度转化为 O(n) 复杂度
 
 - tree diff
+
   * Web UI中DOM节点跨层级的移动操作特别少，可以忽略不计。
   * React 通过 updateDepth 对 Virtual DOM 树进行层级控制。
   * 对树分层比较，两棵树只对同一层次节点进行比较。如果该节点不存在时，则该节点及其子节点会被完全删除，不会再进一步比较。
@@ -15,8 +16,25 @@ React 用三大策略将 O(n^3) 复杂度转化为 O(n) 复杂度
   * 因此官方建议不要进行 DOM 节点跨层级操作，可以通过 CSS 隐藏、显示节点，而不是真正地移除、添加 DOM 节点。
   
 - component diff
-  * 拥有相同类的两个组件 生成相似的树形结构，然后继续对比子组件。
-  * 拥有不同类的两个组件 生成不同的树形结构。Two elements of different types will produce different trees.
+
+  * DOM Elements Of The Same Type: React 会对比两者的属性, 仅更新不同的部分。在更新完本节点之后会递归对比它们的子节点
+        
+    ``` html
+    <div className="before" title="stuff" />
+
+    <div className="after" title="stuff" />
+    ```
+    在上面代码中，React 只会更新 className 属性。
+
+    ``` html
+    <div style={{color: 'red', fontWeight: 'bold'}} />
+
+    <div style={{color: 'green', fontWeight: 'bold'}} />
+    ```
+    在上面代码中，React 只会更新 color, fontWeight 会保持不变
+    
+  * Elements Of Different Types: Two elements of different types will produce different trees.
+    
     ``` html
     <div>
       <Counter />
