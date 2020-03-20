@@ -50,6 +50,10 @@ const policeman1 = new Observer('David');
 const policeman2 = new Observer('Ellen');
 const policeman3 = new Observer('Wallance');
 
+thief.add(policeman1);
+thief.add(policeman2);
+thief.add(policeman3);
+
 thief.notify(policeman => {
   console.log(`${policeman.name} is chasing ${thief.name}.`);
 });
