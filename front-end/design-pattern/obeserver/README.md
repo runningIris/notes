@@ -33,14 +33,14 @@ class Subject {
     this.observers.push(observer);
   }
   notify(callback) {
-    for(let observer of this.observer) {
+    for(let observer of this.observers) {
       callback(observer);
     }
   }
 }
 
 class Observer {
-  constructor() {
+  constructor(name) {
     this.name = name;
   }
 }
