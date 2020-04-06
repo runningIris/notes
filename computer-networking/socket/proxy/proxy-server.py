@@ -1,7 +1,7 @@
 from socket import *
 
 proxyServerSocket = socket(AF_INET, SOCK_STREAM)
-proxyServerSocket.bind(('', 1006))
+proxyServerSocket.bind(('localhost', 1006))
 proxyServerSocket.listen(5)
 
 while True:
