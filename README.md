@@ -3,7 +3,7 @@
 
 ## 数学
 - [线性代数 Linear Algebra](https://github.com/runningIris/notes/blob/master/linear-algebra)
-- [微积分 Calculus](https://github.com/runningIris/notes/blob/master/calculus/README.md)
+- [微积分 Calculus](https://github.com/runningIris/notes/blob/master/calculus)
 
 ## 算法
 - [Classic Algorithms](https://github.com/runningIris/notes/blob/master/algorithms)
