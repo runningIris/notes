@@ -1,6 +1,16 @@
 # ideas
 
-### 🍕unstated-next
+### 🌼 UI Kitten Icons
+- IconRegistry 注册到 service
+- Icon 从 service 中获取
+
+### 🌸 Eva 处理主题
+- `<ApplicationProvider {...eva} theme={} />`
+
+### 🌈 react-native-root-siblings 在根容器插入节点
+- RootSiblingParent
+
+### 🍕 unstated-next
 
 share data using context and hooks
 
