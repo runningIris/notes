@@ -17,15 +17,15 @@ function useTheme(initialTheme = 'day') {
   }
 }
 
-export const state = createContainer(useTheme)
+export const Theme = createContainer(useTheme)
 ```
 
 ``` js
 // App.js
-import { state } = require('./logic')
+import { Theme } = require('./logic')
 
 const Child = () => {
-  const {toggleTheme, theme} = state.useContainer()
+  const {toggleTheme, theme} = Theme.useContainer()
   return <div 
     onClick={toggleTheme} 
     style={{
@@ -35,9 +35,9 @@ const Child = () => {
 }
 
 const App = () => (
-  <state.Provider initialState={'day'}>
+  <Theme.Provider initialState={'day'}>
     <Child />
     <Child />
-  </state.Provider>
+  </Theme.Provider>
 )
 ```
