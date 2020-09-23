@@ -35,7 +35,7 @@ const Child = () => {
 }
 
 const App = () => (
-  <state.Provider store={'day'}>
+  <state.Provider initialState={'day'}>
     <Child />
     <Child />
   </state.Provider>
