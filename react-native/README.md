@@ -4,6 +4,8 @@
 
 share data using context and hooks
 
+source code: [https://github.com/jamiebuilds/unstated-next/blob/master/src/unstated-next.tsx](https://github.com/jamiebuilds/unstated-next/blob/master/src/unstated-next.tsx)
+
 ``` js
 // logic.js
 import { useState } from 'react'
