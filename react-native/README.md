@@ -1,5 +1,7 @@
 # ideas
 
+### 📲 react-native-orientation 监听屏幕方向切换
+
 ### 🌼 UI Kitten Icons
 - IconRegistry 注册到 service
 - Icon 从 service 中获取
