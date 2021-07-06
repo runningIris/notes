@@ -1,4 +1,5 @@
 // 简单实现的环状百分比图（react native 里用echarts太难搞了，本组件用css实现）
+// react native 不能设置 transform-origin，这个还能勉强 hack hack，但 transition 也没有，要用 Animated.View 来实现，太难搞了，放弃动画效果。
 
 import React, {useState} from 'react'
 import {View} from 'react-native'
